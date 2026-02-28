@@ -1,0 +1,51 @@
+<!--               Cascade & Specificity            -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* The specificity of this selector is 1 */
+        h1{
+            color: aquamarine;
+        }
+
+        /* The specificity of this selector is 10 */
+        .yellow{
+            color: yellowgreen;
+        }
+        
+        /* The specificity of this selector is 10 */
+        .red{
+            color: rebeccapurple;
+        }
+
+        /* The specificity of this selector is 10 */
+        .purple{
+            color: purple;
+        }
+
+        /* The specificity of this selector is 10 */
+        [data-x=a]{
+            color: blue;
+        }
+        
+        /* The specificity of this selector is 1 + 10 = 11 */
+        h1.red{
+            color: black;
+        }
+
+
+        /* The specificity of this selector is 1 + 10 + 10 + 10 + 10 = 41*/
+        a.harryclass.rohanclass[href]:hover{
+            color: beige;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 class="yellow red purple" data-x="a">Hello! We are learning cascade and specificity.</h1>
+
+</body>
+</html>

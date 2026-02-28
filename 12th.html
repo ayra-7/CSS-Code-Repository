@@ -1,0 +1,39 @@
+<!--           Overflow           -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+
+        div>p{
+            border: 2px solid black;
+            width: 20vw;
+            height: 10vh;
+            overflow: auto;
+            white-space: nowrap;
+            text-overflow:ellipsis ;
+        }
+        div>div{
+            border: 2px solid black;
+            width: 20vw;
+            height: 10vh;
+            /* overflow-x: auto; */
+            /* overflow-y: hidden; */
+            text-overflow: ellipsis;
+            overflow:auto scroll ;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet vero optio quos iste earum odio alias est, hic soluta nobis, et ipsa deserunt! Iusto dolorum adipisci enim asperiores, eaque nisi vero doloribus unde inventore saepe delectus distinctio? Dignissimos voluptates ipsum cumque quasi perferendis possimus obcaecati consequuntur, fuga veritatis itaque molestias.
+        </p>
+    </div>
+    <div>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut hic neque nemo perspiciatis illo, minus consequatur minima voluptas dolor officia voluptates quasi, nihil similique. Saepe voluptate dolore repudiandae id dicta.</div>
+    </div>
+</body>
+</html>

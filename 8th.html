@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        html{
+            font-size: 12px;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            border: 2px solid blue;
+            background-color: beige;
+            width: 233px;
+            margin:auto; /* Only applies on block elements */
+        }
+
+        /* Inline element, so no width amd margin applies */
+        span{
+            border: 2px solid blue;
+            background-color: beige;
+            width: 233px;
+            margin:auto;
+        }
+
+        .red{
+            box-sizing: border-box;
+            border: 2px solid blueviolet;
+            background-color: lavenderblush;
+            margin: 23px auto;
+            width: 40vw;
+            height: 60vh;
+            font-size: 12px;
+        }
+
+        .red p{
+            font-size: 2em; /* Inheritive Property */ /* 2*the font-size that is inherited */
+        }
+
+        .r{
+            box-sizing: border-box;
+            border: 2px solid rgb(11, 241, 11);
+            background-color: lightcoral;
+            margin: 23px auto;
+            width: 80vw;
+            height: 60vh;
+        }
+
+        .r p{
+            font-size: 1.5rem; /* 2*the font-size of the root element */
+        }
+
+        .e{
+            box-sizing: border-box;
+            border: 2px solid rgb(55, 32, 207);
+            background-color: khaki;
+            width: 50vmin;
+            height: 50vmax;
+        }
+
+        .d{
+            box-sizing: border-box;
+            border: 2px solid rgb(230, 13, 53);
+            background-color: skyblue;
+            margin: 23px auto;
+            min-height: 80vh;
+            max-width: 10vw;
+        }
+        .p{
+            box-sizing: border-box;
+            border: 2px solid black;
+            background-color: tan;
+            margin: 23px auto;
+            width: 40vw;
+            height: 60vh;
+            font-size: 12px;
+        }
+
+        .p div{
+            border: 2px solid blue;
+            width: 50%;
+        }
+        .p>div>p{
+            border: 2px solid purple;
+            width: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        <p>This is a container.</p>
+    </div>
+    <span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, cum? Eveniet assumenda distinctio dolore pariatur ab debitis a maiores similique.</p>
+    </span>
+    <div class="red">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ad perspiciatis nobis, officiis sint asperiores, quisquam fugit voluptatibus corrupti, quas iste esse vel. Magni dolorem quasi distinctio voluptatum repellendus harum nesciunt quod illo. Alias temporibus atque ducimus, vitae mollitia numquam!</p>
+    </div>
+    <div class="r">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti numquam vero repellendus rerum, modi neque ducimus alias architecto omnis quidem dignissimos unde fuga voluptatem quisquam, eius nam illo iste optio.</p>
+    </div>
+    <div class="e">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti numquam vero repellendus rerum, modi neque ducimus alias architecto omnis quidem dignissimos unde fuga voluptatem quisquam, eius nam illo iste optio.</p>
+    </div>
+    <div class="d">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti numquam vero repellendus rerum, modi neque ducimus alias architecto omnis quidem dignissimos unde fuga voluptatem quisquam, eius nam illo iste optio.</p>
+    </div>
+    <div class="p">
+        <div>Lorem ipsum dffwrffmodi neque ducimus alias arc hitdscq fwefqwe dede cto omnis quidem dignis simos unde fuga volup tatem quisquam, eius nam illo iste optio.
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, quaerat!</p>
+        </div>
+
+    </div>
+</body>
+</html>

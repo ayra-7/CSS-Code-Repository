@@ -1,0 +1,73 @@
+<!--       More on Selectors      -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+    <style>
+
+        .box:first-child{
+            background-color: antiquewhite;
+        }
+
+        .box:first-child::first-line{
+            color: blue;
+        }
+
+        .boxes *{
+            color: blue;
+            border: 2px solid black;
+        }
+
+        p, a, .box, [data-color="primary"]{  /* Grouping of selectors */
+        margin-top: 45px;
+        padding: 20px;
+        }
+
+        .box:nth-last-child(1){
+            background-color: azure;
+        }
+        
+        .boxes::before{   /* Used to dynamically insert content before any element using CSS */
+            content: "Harry is good.";
+            color: blueviolet;
+        }
+
+        .boxes::after{    /* Used to dynamically insert content after any element using CSS */
+            content: "Harry is too good.";
+            color: red;
+        }
+
+        ::selection{
+            background-color: black;
+            color: aqua;
+        }
+
+        .box::first-letter{
+            color: brown;
+            font-size: 50px;
+            font-style: italic;
+        }
+
+        input{
+            margin: 10px;
+            padding: 10px;
+        }
+
+        input::placeholder{
+            color: gray;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="boxes">
+        <div data-color="primary" class="box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam debitis sunt tempora quidem doloremque consequatur fuga quo quis? Delectus ipsum facere eaque necessitatibus optio eveniet consequatur sapiente vel quo id, facilis deleniti in? Voluptas, quidem laborum minima, quaerat id placeat, nulla sed ut nemo veritatis consequatur fugiat ipsum maxime. Inventore?</div>
+        <div class="box">I am a box.</div>
+        <div class="box">I am another box.</div>
+        <input type="text" placeholder="Type your name here...">
+    </div>
+</body>
+</html>

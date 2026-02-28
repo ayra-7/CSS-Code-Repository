@@ -1,0 +1,92 @@
+<!--          Selectors             -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        /* Element Selector */
+        div{
+            color:coral
+        }
+
+        /* Class Selector */
+        .red{
+            color:blueviolet;
+        }
+        
+        /* ID Selector */
+        #green{
+            color: brown;
+        }
+
+        /* Child Selector */
+        div>span {
+            color:hotpink
+        }
+        
+        /* Descendant Selector */
+        div p{
+            color: blue;
+        }
+
+        /* Universal Selector */
+        * {
+            color:burlywood;
+        }
+
+        /* Pseudo-Class Selectors */
+        a:visited{
+            color: black;
+        }
+
+        a:link{
+            color: cadetblue;
+        }
+
+        a:active{
+            background-color: aquamarine;
+        } 
+
+        a:hover{
+            background-color:blanchedalmond;
+        }
+
+        p:first-child{
+            background-color:azure;
+        }
+    </style>
+    
+</head>
+<body>
+    <div>
+        Hello! Element Selector.
+    </div>
+    <div class="red">
+        Hello! Class Selector.
+    </div>
+    <div id="green">
+        Hello! ID Selector.
+    </div>
+    I am a div having direct para child.
+    <div>
+        <span>Hello! Child Selector.
+        </span>
+    </div>
+    <div>I am a div having direct article child.
+        <article>
+            I am an article, a direct child of div, having a direct para child.
+            <p>Hello! Descendant Selector.
+            </p>
+        </article>
+    </div>
+    <a href="https://www.google.co.in/">GOOGLE</a>
+    <a href="https://www.facebook2.com/">Facebook</a>
+    <div>
+        <p>Hello! :first-child pseudo-class.</p>
+        <p>Hello! :first-child pseudo-class.</p>
+    </div>
+    
+</body>
+</html>

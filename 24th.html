@@ -1,0 +1,198 @@
+<!--              Excercise-7           -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excercise-7 Grid</title>
+    <style>
+
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
+        }
+
+        ul{
+            display: flex;
+            align-items: center;
+        }
+
+        ul li{
+            list-style: none;
+            padding: 2px;
+
+        }
+
+        ul li a{
+            text-decoration: none;
+            color: black;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .l{
+            padding: 5px;
+        }
+
+        .s{
+            transform: rotate(90deg);
+        }
+
+        .div1{
+            width: 60vw;
+            height: 100px;
+            margin: auto;
+            padding: 20px;
+            display: grid;
+            justify-content: space-around;
+            align-items: center;
+            grid-template-columns: 1fr 150px; 
+        }
+
+        .p1{
+            font-size: 48px;
+            font-weight: 500;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #222222;
+
+        }
+
+        .div2{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            width: 70vw;
+            margin: auto;
+            text-align: center;
+
+        }
+
+        .p2{
+            font-size: 29px;
+            color: #222222;
+
+        }
+
+        .div3{
+            background-color: #00b6d1;
+            height: 24px;
+            width: 280px;
+            box-sizing: content-box;
+            padding: 12px 20px;
+            margin: auto;
+            margin-top: 35px;
+            text-align: center;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+            font-style: normal;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .div3 a{
+            text-decoration: none;
+            text-align: center;
+            color: white;
+        }
+
+        .div3:hover{
+            background-color: #07a2b9;
+        }
+
+        .div4{
+            display: grid;
+            grid-template-columns: 90px 228px 331px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            margin-right: 340px;
+        }
+
+        .div4 img{
+            align-self: end;
+            padding-top: 15px;
+        }
+
+        .div4 .p2{
+            align-self: baseline;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 24px;
+        }
+
+        .div4 .p3{
+            align-self: baseline;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 13px;
+        }
+
+        .div5{
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            width: 63vw;
+            margin-top: 30px;
+            border: 2px solid;
+            border-color: black;
+        }
+        
+        .divv{
+            border: 2px solid;
+            border-color: tomato;
+            height: 200px;
+            width: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="Logo1.PNG" alt="Logo1">
+            <ul>
+                <li><a href="/"><span class="l">Product</span> <img src="https://th.bing.com/th/id/OIP.CN3PL8fUz_FpFl3FHlOeAwHaHa?rs=1&pid=ImgDetMain" alt="DD" height="20px" width="20px"></a></li>
+                <li><a href="/"><span class="l">For business</span><img src="https://th.bing.com/th/id/OIP.CN3PL8fUz_FpFl3FHlOeAwHaHa?rs=1&pid=ImgDetMain" alt="DD" height="20px" width="20px"></a></li>
+                <li><a href="/"><span class="l">Resources</span><img src="https://th.bing.com/th/id/OIP.CN3PL8fUz_FpFl3FHlOeAwHaHa?rs=1&pid=ImgDetMain" alt="DD" height="20px" width="20px"></a></li>
+                <li><a href="/"><span class="l">Support</span><img src="https://th.bing.com/th/id/OIP.CN3PL8fUz_FpFl3FHlOeAwHaHa?rs=1&pid=ImgDetMain" alt="DD" height="20px" width="20px"></a></li>
+                <li><a href="/"><span class="l">Our company</span><img src="https://th.bing.com/th/id/OIP.CN3PL8fUz_FpFl3FHlOeAwHaHa?rs=1&pid=ImgDetMain" alt="DD" height="20px" width="20px"></a></li>
+                <li><a href="/"><img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Translate_logo.max-2800x2800.png" alt="Translator" height="20px" width="20px"></a></li>
+                <li><a href="/"></a><div class="s"><img src="https://cdn1.iconfinder.com/data/icons/web-and-mobile-ui-outline-icon-kit/512/UI_Icons_2-01-512.png" alt="Search" height="30px" width="30px"></div></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="div1">
+            <p class="p1">Download <b>UltraEdit</b> for Windows </p>
+            <a href="/"><img src="Logo12.PNG" alt="Logo2"></a>
+        </div>
+        <div class="div2">
+            <p class="p2">Download and try UltraEdit before you buy it! This download includes the full Windows version of the text editor.</p>
+        </div>
+        <div class="div3"><a href="/">DOWNLOAD MAC OR LINUX VERSION</a></div>
+        <div class="div4">
+            <img src="Logo3.PNG" alt="Logo3" height="70px" width="70px">
+            <p class="p2">Download UltraEdit</p>
+            <p class="p3">v2024.3 (released 2025-03-21) | Hotfix information </p>
+        </div>
+        <div class="div5">
+            <div class="divv divv1"></div>
+            <div class="divv divv2"></div>
+            <div class="divv divv3"></div>
+            <div class="divv divv4"></div>
+            <div class="divv divv5"></div>
+            <div class="divv divv6"></div>
+            <div class="divv divv7"></div>
+            <div class="divv divv8"></div>
+            <div class="divv divv9"></div>
+            <div class="divv divv10"></div>
+        </div>
+    </main>
+
+</body>
+</html>

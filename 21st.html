@@ -1,0 +1,128 @@
+<!--                 Grid                 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+
+        .cont{
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: [pehla] 120px [doosra] 100px [teesra]; /* Column lines' naming */
+            height: 300px;
+            margin: 15px;
+        }
+
+        .item{
+            border: 2px solid red;
+            height: 55px;
+        }
+
+        .item4{
+            grid-row: 1/2;
+            grid-column: 1/2;
+        }
+
+        .item1{
+            /* 
+            grid-row: 1/2;
+            grid-column: 1/2;
+            */
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+
+        .item3{
+            grid-column: pehla/teesra;   
+        }
+
+        .cont1{
+            border: 2px solid black;
+            display: grid;
+            height: 300px;
+            grid-template-areas: "nav nav nav"
+                                 "side article article"
+                                 "footer footer footer";
+            margin: 20px;
+        }
+
+        .it{
+            border: 2px solid red;
+            height: 55px; 
+        }
+
+        .it1{
+            grid-area: nav;
+            background-color: aliceblue;
+        }
+        
+        .it2{
+            grid-area: side;
+            background-color: antiquewhite;
+        }
+        
+        .it3{
+            grid-area: article;
+            background-color: rgb(240, 240, 175);
+        }
+        
+        .it4{
+            grid-area: footer;
+        }
+        .cont2{
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            gap: 2px;
+            row-gap: 15px;
+            column-gap: 20px;
+            height: 100vh;
+            width: 80vw;
+            align-items: center;
+            justify-items: center;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(4, minmax(100px, 1fr));
+            place-content: center;
+        }
+
+        .it1_1{
+            border: 2px solid red;
+            height: 52px;
+            width: 52px;
+        }
+
+        .it1-1{
+            align-self: start;
+            justify-self: end;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="item item1">1</div>
+        <div class="item">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item">5</div>
+    </div>
+    <div class="cont1">
+        <div class="it it1">1</div>
+        <div class="it it2">2</div>
+        <div class="it it3">3</div>
+        <div class="it it4">4</div>
+        <div class="it it5">5</div>
+    </div>
+    <div class="cont2">
+        <div class="it1_1 it1-1">1</div>
+        <div class="it1_1 it2-1">2</div>
+        <div class="it1_1 it3-1">3</div>
+        <div class="it1_1 it4-1">4</div>
+        <div class="it1_1 it5-1">5</div>
+    </div>
+</body>
+</html>

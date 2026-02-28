@@ -1,0 +1,82 @@
+<!--                Exercise-3                  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: lightgray;
+        }
+        .parent{
+            border: 0.1px solid black;
+            background-color: white;
+            border-color: transparent;
+
+            border-radius: 10px;
+            height: 500px;
+            width: 300px;
+            margin: auto;
+        }
+        div>div:first-child{
+            border-color: transparent;
+            margin: 8px 3px 15px  3px ;
+            padding: 1px;
+            text-align: center;
+        }
+
+        img{
+            border-radius: 15px;
+            text-align: center;
+            height: 200px;
+            width: 98%;
+        }
+        
+        span{
+            border: 0.1px solid;
+            border-color: rgba(0, 0, 0, );
+            border-radius: 10px;
+            margin: 20px;
+            padding: 5px;
+            color: gray;
+            font-size: 16px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        h2{
+            margin: 20px 15px 15px 15px;
+        }
+
+        p{
+            margin: 20px 15px 38px 15px;
+            color: gray;
+        }
+
+        a{
+            background-color: rgba(173, 216, 230, 0.545);
+            border: 2px;
+            border-color:transparent;
+            border-radius: 50px;
+            margin: 100px;
+            padding: 10px;
+            cursor: pointer;
+        }
+        a:hover{
+            background-color: rgb(164, 192, 210);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="image">
+            <img src="https://wallpapercave.com/wp/fsmrpPy.jpg" alt="scenery" >
+        </div>
+        <span>Nature</span>
+        <span>Lake</span>
+        <h2>Lago di Braies</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum esse voluptatem, possimus nam expedita repellendus impedit fugiat necessitatibus ex distinctio.</p>
+        <a href="https://www.google.co.in">Read more</a>
+    </div>
+</body>
+</html>

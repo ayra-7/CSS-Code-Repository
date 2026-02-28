@@ -1,0 +1,99 @@
+<!--             Excercise-6           -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Bar Design using Flexbox</title>
+    <style>
+
+        div{
+            width: 80vw;
+            margin: auto;
+        }
+        ul{
+            display: flex;
+            justify-content: center ;
+        }
+
+        ul li{
+            list-style: none;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            
+        }
+
+        ul li a{
+            text-decoration: none;
+            color: black;
+            font-family:Arial, Helvetica, sans-serif ;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .li{
+            flex-grow: 0;
+        }
+
+        .li1{
+            flex-grow: 0;
+            
+        }
+        .li2{
+            flex-grow: 2;
+            font-size: 30px;
+            font-weight: bold;
+            align-self: center;
+
+        }
+
+        .li3{
+            flex-grow: 0.1;
+        }
+
+        .li4{
+            flex-grow: 0.1;
+        }
+
+        .li5{
+            flex-grow: 0.1;
+        }
+
+        .li6{
+            flex-grow: 0.1;
+        }
+
+        .li7{
+            flex-grow: 0.1;
+        }
+
+        span{
+            padding: 7px;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <div>
+            <nav>
+                <ul>
+                    <li class="li li1"><a href="/"><img src="https://images.pexels.com/photos/371633/pexels-photo-371633.jpeg?cs=srgb&dl=clouds-country-daylight-371633.jpg&fm=jpg" alt="Logo" height="50px" width="50px"></a></li>
+                    <li class="li li2"><a href="/"></a>UltraEdit</li>
+                    <li class="li li3"><a href="/"><span>Products</span>  <img src="https://th.bing.com/th/id/OIP.CN3PL8fUz_FpFl3FHlOeAwHaHa?rs=1&pid=ImgDetMain" alt="DD" height="20px" width="20px"></a></li>
+                    <li class="li li4"><a href="/"><span>Pricng</span> <img src="https://th.bing.com/th/id/OIP.CN3PL8fUz_FpFl3FHlOeAwHaHa?rs=1&pid=ImgDetMain" alt="DD" height="20px" width="20px"></a></li>
+                    <li class="li li5"><a href="/"><span>Resources</span> <img src="https://th.bing.com/th/id/OIP.CN3PL8fUz_FpFl3FHlOeAwHaHa?rs=1&pid=ImgDetMain" alt="DD" height="20px" width="20px"></a></li>
+                    <li class="li li6"><a href="/"><span>About US</span> <img src="https://th.bing.com/th/id/OIP.CN3PL8fUz_FpFl3FHlOeAwHaHa?rs=1&pid=ImgDetMain" alt="DD" height="20px" width="20px"></a></li>
+                    <li class="li li7"><a href="/"><img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Translate_logo.max-2800x2800.png" alt="Translator" height="20px" width="20px"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</body>
+</html>
