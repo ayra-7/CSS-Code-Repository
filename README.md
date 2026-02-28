@@ -1,1 +1,1 @@
-This is a CSS ode file along with HTMl.
+This is a CSS code file along with HTMl.
